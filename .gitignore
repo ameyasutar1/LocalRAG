@@ -12,7 +12,8 @@ dist/
 
 # Database
 *.db
-/data/files/**
+/data/files/*
+!/data/files/.gitkeep
 
 # System
 .DS_Store
