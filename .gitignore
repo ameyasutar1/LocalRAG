@@ -12,6 +12,7 @@ dist/
 
 # Database
 *.db
+/data/files/**
 
 # System
 .DS_Store
