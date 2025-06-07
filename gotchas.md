@@ -58,4 +58,15 @@
 - **Symptom:** Chat answers reference files that were deleted from the sidebar and database.
 - **Root Cause:** ChromaDB/LangChain vectorstore does not fully remove embeddings unless `persist()` is called and the vectorstore is reloaded. In-memory cache or on-disk state may get out of sync.
 - **Solution:** After any vectorstore deletion, always call `persist()` and reinitialize the vectorstore object. See implementation in `main.py`.
-- **References:** [LangChain Chroma deletion issue #4519](https://github.com/langchain-ai/langchain/issues/4519), [Chroma vectorstore deletion discussion](https://github.com/langchain-ai/langchain/discussions/9495)
+- **References:** [LangChain Chroma deletion issue #4519](https://github.com/langchain-ai/langchain/issues/4519), [Chroma vectorstore deletion discussion](https://github.com/langchain-ai/langchain/discussions/9495)[2025-06-07T22:05:55.409846] [init_db] Database initialized successfully.
+[2025-06-07T22:13:31.612510] [init_db] Database initialized successfully.
+[2025-06-07T22:15:22.025357] [init_db] Database initialized successfully.
+[2025-06-07T22:17:44.579734] [AdminClearAll] All files and chats deleted at 2025-06-07T22:17:44.579734
+[2025-06-07T22:30:53.722473] [init_db] Database initialized successfully.
+[2025-06-07T22:32:16.164785] [DeleteFile] File 1 deleted successfully at 2025-06-07T22:32:16.164785
+[2025-06-07T22:32:16.206026] [DeleteFile] Chromadb delete error (filename): Expected where value to be a str, int, float, or operator expression, got (SELECT files.id, files.filename, files.filepath, files.upload_time, files.user_id, files.file_metadata 
+FROM files 
+WHERE files.id = :id_1) in delete.
+[2025-06-07T22:32:35.190725] [AdminClearAll] All files and chats deleted at 2025-06-07T22:32:35.190725
+[2025-06-07T22:33:45.669879] [init_db] Database initialized successfully.
+[2025-06-07T22:33:58.656303] [DeleteFile] File 1 deleted successfully at 2025-06-07T22:33:58.655783
