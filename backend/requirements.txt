@@ -159,8 +159,7 @@ ujson==5.10.0
 unstructured==0.17.2
 unstructured-client==0.34.0
 urllib3==2.4.0
-uvicorn==0.34.2
-uvloop==0.21.0
+uvicorn
 watchfiles==1.0.5
 webencodings==0.5.1
 websocket-client==1.8.0
