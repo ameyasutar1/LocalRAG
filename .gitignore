@@ -35,3 +35,6 @@ coverage/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# RAG Database
+rag_chroma_db/
