@@ -70,3 +70,5 @@ WHERE files.id = :id_1) in delete.
 [2025-06-07T22:32:35.190725] [AdminClearAll] All files and chats deleted at 2025-06-07T22:32:35.190725
 [2025-06-07T22:33:45.669879] [init_db] Database initialized successfully.
 [2025-06-07T22:33:58.656303] [DeleteFile] File 1 deleted successfully at 2025-06-07T22:33:58.655783
+[2025-06-07T23:30:21.515604] [init_db] Database initialized successfully.
+[2025-06-07T23:32:07.401671] [AdminClearAll] All files and chats deleted at 2025-06-07T23:32:07.401671
