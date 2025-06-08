@@ -533,7 +533,7 @@ if __name__ == "__main__":
             chroma_manager
         )
 
-    print("\n✅ All files processed and embeddings generated. Summary:")
+    print("\n All files processed and embeddings generated. Summary:")
     for inp, mdp, imd, fn, fid in processed_results:
         print(f"   • Original: '{inp}'\n    → Markdown: '{mdp}'\n    → Images folder: '{imd}'\n    → DB ID: '{fid}'")
 
@@ -541,7 +541,7 @@ if __name__ == "__main__":
     print("\n--- Example Querying ---")
     
     # Query for text
-    query_text = "What is attention ?"
+    query_text = "What is self attention ?"
     print(f"\nQuerying with text: '{query_text}'")
     text_query_results = chroma_manager.query_documents(query_text, n_results=3)
     if text_query_results and text_query_results['documents']:
@@ -551,7 +551,7 @@ if __name__ == "__main__":
             distance = text_query_results['distances'][0][i]
             print(f"   Result {i+1} (Distance: {distance:.4f}):")
             print(f"     Type: {metadata.get('content_type')}, File: {metadata.get('filename')}, Chunk ID: {metadata.get('chunk_id')}")
-            print(f"     Content: '{doc_content[:100]}...'") # Print first 100 chars
+            print(f"     Content: '{doc_content}...'") # Print first 100 chars
     else:
         print("No text results found.")
 

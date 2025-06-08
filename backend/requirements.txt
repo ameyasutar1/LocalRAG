@@ -169,6 +169,6 @@ yarl==1.20.0
 zipp==3.21.0
 zstandard==0.23.0
 docling
-fitz
 PyMuPDF
 sentence-transformers
+cuda-python
